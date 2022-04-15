@@ -1,0 +1,174 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.unity3d.player"
+5    android:installLocation="auto"
+6    android:versionCode="1"
+7    android:versionName="0.1.0" >
+8
+9    <uses-sdk
+10        android:minSdkVersion="23"
+10-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml
+11        android:targetSdkVersion="30" />
+11-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml
+12
+13    <uses-feature android:glEsVersion="0x00030000" />
+13-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:23:3-52
+13-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:23:17-49
+14
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:24:3-65
+15-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:24:20-62
+16    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+16-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:25:3-69
+16-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:25:20-66
+17    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+17-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:26:3-78
+17-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:26:20-75
+18
+19    <uses-feature
+19-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:27:3-87
+20        android:name="android.hardware.microphone"
+20-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:27:17-59
+21        android:required="false" />
+21-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:27:60-84
+22    <uses-feature
+22-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:28:3-88
+23        android:name="android.hardware.touchscreen"
+23-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:28:17-60
+24        android:required="false" />
+24-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:28:61-85
+25    <uses-feature
+25-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:29:3-99
+26        android:name="android.hardware.touchscreen.multitouch"
+26-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:29:17-71
+27        android:required="false" />
+27-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:29:72-96
+28    <uses-feature
+28-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:30:3-108
+29        android:name="android.hardware.touchscreen.multitouch.distinct"
+29-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:30:17-80
+30        android:required="false" />
+30-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:30:81-105
+31    <uses-feature
+31-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:31:3-111
+32        android:name="android.hardware.vr.headtracking"
+32-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:31:17-64
+33        android:required="true"
+33-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:31:85-108
+34        android:version="1" />
+34-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:31:65-84
+35
+36    <application
+36-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:3:3-22:17
+37        android:allowBackup="false"
+37-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:3:114-141
+38        android:extractNativeLibs="true"
+38-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:3:16-48
+39        android:icon="@mipmap/app_icon"
+39-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:3:82-113
+40        android:label="@string/app_name"
+40-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:3:49-81
+41        android:networkSecurityConfig="@xml/network_sec_config" >
+41-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:3:142-197
+42        <activity
+42-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:4:5-13:16
+43            android:name="com.unity3d.player.UnityPlayerActivity"
+43-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:4:15-68
+44            android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|uiMode"
+44-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:4:204-305
+45            android:hardwareAccelerated="false"
+45-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:4:341-376
+46            android:launchMode="singleTask"
+46-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:4:172-203
+47            android:resizeableActivity="false"
+47-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:4:306-340
+48            android:screenOrientation="landscape"
+48-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:4:134-171
+49            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+49-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:4:69-133
+50            <intent-filter>
+50-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:5:7-9:23
+51                <action android:name="android.intent.action.MAIN" />
+51-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:6:9-61
+51-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:6:17-58
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:7:9-69
+53-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:7:19-66
+54                <category android:name="com.oculus.intent.category.VR" />
+54-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:8:9-66
+54-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:8:19-63
+55            </intent-filter>
+56
+57            <meta-data
+57-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:10:7-82
+58                android:name="unityplayer.UnityActivity"
+58-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:10:18-58
+59                android:value="true" />
+59-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:10:59-79
+60            <meta-data
+60-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:11:7-78
+61                android:name="android.notch_support"
+61-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:11:18-54
+62                android:value="true" />
+62-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:11:55-75
+63            <meta-data
+63-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:12:7-81
+64                android:name="com.oculus.vr.focusaware"
+64-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:12:18-57
+65                android:value="true" />
+65-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:12:58-78
+66        </activity>
+67
+68        <meta-data
+68-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:14:5-69
+69            android:name="unity.splash-mode"
+69-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:14:16-48
+70            android:value="0" />
+70-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:14:49-66
+71        <meta-data
+71-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:15:5-74
+72            android:name="unity.splash-enable"
+72-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:15:16-50
+73            android:value="True" />
+73-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:15:51-71
+74        <meta-data
+74-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:16:5-78
+75            android:name="unity.launch-fullscreen"
+75-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:16:16-54
+76            android:value="True" />
+76-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:16:55-75
+77        <meta-data
+77-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:17:5-84
+78            android:name="unity.allow-resizable-window"
+78-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:17:16-59
+79            android:value="False" />
+79-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:17:60-81
+80        <meta-data
+80-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:18:5-81
+81            android:name="notch.config"
+81-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:18:16-43
+82            android:value="portrait|landscape" />
+82-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:18:44-78
+83        <meta-data
+83-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:19:5-97
+84            android:name="com.samsung.android.vr.application.mode"
+84-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:19:16-70
+85            android:value="vr_only" />
+85-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:19:71-94
+86        <meta-data
+86-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:20:5-91
+87            android:name="com.unity.xr.oculus.LowOverheadMode"
+87-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:20:16-66
+88            android:value="false" />
+88-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:20:67-88
+89        <meta-data
+89-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:21:5-90
+90            android:name="com.oculus.supportedDevices"
+90-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:21:16-58
+91            android:value="quest|quest2" />
+91-->/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:21:59-87
+92    </application>
+93
+94</manifest>

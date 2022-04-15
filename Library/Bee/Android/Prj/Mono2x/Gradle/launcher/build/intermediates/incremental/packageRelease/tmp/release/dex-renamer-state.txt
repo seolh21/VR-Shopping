@@ -1,0 +1,4 @@
+#Wed Apr 13 17:02:19 PDT 2022
+base.0=/Users/sarahju/VR_Shopping_7/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/build/intermediates/dex/release/mergeDexRelease/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

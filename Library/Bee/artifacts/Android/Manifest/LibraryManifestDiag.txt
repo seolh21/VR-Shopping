@@ -1,0 +1,23 @@
+Using template '/Applications/Unity/Hub/Editor/2021.2.10f1/PlaybackEngines/AndroidPlayer/Apk/UnityManifest.xml'
+
+android.permission.INTERNET was added because:
+	UnityEngine.Networking was present in:
+		Unity.InputSystem-FeaturesChecked.txt
+	System.Net.Sockets was present in:
+		Oculus.VR-FeaturesChecked.txt
+	UnityEngine.Network was present in:
+		Unity.InputSystem-FeaturesChecked.txt
+android.permission.RECORD_AUDIO, android.permission.MODIFY_AUDIO_SETTINGS, android.permission.BLUETOOTH, android.hardware.microphone were added because:
+	UnityEngine.Microphone was present in:
+		Assembly-CSharp-FeaturesChecked.txt
+		Oculus.LipSync-FeaturesChecked.txt
+		Facebook.WitAI-FeaturesChecked.txt
+android.hardware.touchscreen.multitouch, android.hardware.touchscreen.multitouch.distinct were enabled because:
+	UnityEngine.Input::GetTouch was present in:
+		Assembly-CSharp-FeaturesChecked.txt
+		UnityEngine.UI-FeaturesChecked.txt
+		Unity.XR.Interaction.Toolkit-FeaturesChecked.txt
+	UnityEngine.Input::get_touchCount was present in:
+		Assembly-CSharp-FeaturesChecked.txt
+		UnityEngine.UI-FeaturesChecked.txt
+		Unity.XR.Interaction.Toolkit-FeaturesChecked.txt
