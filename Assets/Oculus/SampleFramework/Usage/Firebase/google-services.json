@@ -1,42 +1,34 @@
 {
   "project_info": {
-    "project_number": "",
-    "firebase_url": "",
-    "project_id": "",
-    "storage_bucket": ""
+    "project_number": "336488996611",
+    "firebase_url": "https://my-unity-project-f3807-default-rtdb.firebaseio.com",
+    "project_id": "my-unity-project-f3807",
+    "storage_bucket": "my-unity-project-f3807.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "",
+        "mobilesdk_app_id": "1:336488996611:android:a8b0fd5eb3c4a82fbd1336",
         "android_client_info": {
-          "package_name": ""
+          "package_name": "com.mytest.shopping"
         }
       },
       "oauth_client": [
         {
-          "client_id": "",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "",
-            "certificate_hash": ""
-          }
-        },
-        {
-          "client_id": "",
+          "client_id": "336488996611-9ha68uj77u3vakofulrcfhubu9ptfjtd.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": ""
+          "current_key": "AIzaSyCoLQU5rZC91ZqUrZVBnCeAcQ7-SglU6b8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "",
+              "client_id": "336488996611-9ha68uj77u3vakofulrcfhubu9ptfjtd.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
