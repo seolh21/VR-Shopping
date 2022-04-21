@@ -16,12 +16,12 @@ android {
     defaultConfig {
         minSdkVersion 23
         targetSdkVersion 30
-        applicationId 'com.Sarah.VR_Shopping7'
+        applicationId 'com.Sarah.VR_Shopping8_1'
         ndk {
             abiFilters 'armeabi-v7a'
         }
         versionCode 1
-        versionName '0.1.0'
+        versionName '0.2.0'
     }
 
     aaptOptions {

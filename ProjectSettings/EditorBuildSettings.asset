@@ -6,7 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Supermarket_01.unity
+    path: Assets/Scenes/Login.unity
+    guid: 0f172d23b17be42d59e6b75ba7dd0947
+  - enabled: 1
+    path: Assets/Scenes/Supermarket.unity
     guid: e8a38ce024bda0649bc6f5f575f35bd3
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: aea20477fec634e858cc2a4c65cdb87f,

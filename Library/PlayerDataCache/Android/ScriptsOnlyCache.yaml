@@ -3,6 +3,8 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - HandPresence
     - LocomotionControllerXR
+    - UserAccess
+    - followToCamera
     Oculus.Spatializer.dll:
     - ONSPSettings
     Oculus.VR.Editor.dll:
@@ -16,6 +18,7 @@ ScriptsOnlyBuild:
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
+    - UnityEngine.InputSystem.UI.InputSystemUIInputModule
     - UnityEngine.InputSystem.XR.TrackedPoseDriver
     Unity.RenderPipelines.Core.Runtime.dll:
     - UnityEngine.Rendering.UI.DebugUIHandlerBitField
@@ -50,6 +53,7 @@ ScriptsOnlyBuild:
     Unity.RenderPipelines.Universal.Runtime.dll:
     - UnityEngine.Rendering.Universal.PostProcessData
     - UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
+    - UnityEngine.Rendering.Universal.UniversalAdditionalLightData
     - UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset
     - UnityEngine.Rendering.Universal.UniversalRenderPipelineGlobalSettings
     - UnityEngine.Rendering.Universal.UniversalRendererData
@@ -83,7 +87,6 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.Interaction.Toolkit.XRInteractionManager
     - UnityEngine.XR.Interaction.Toolkit.XRInteractorLineVisual
     - UnityEngine.XR.Interaction.Toolkit.XRRayInteractor
-    - UnityEngine.XR.Interaction.Toolkit.XRSocketInteractor
     Unity.XR.Management.Editor.dll:
     - UnityEditor.XR.Management.XRGeneralSettingsPerBuildTarget
     Unity.XR.Management.dll:
@@ -97,6 +100,7 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.EventTrigger
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
@@ -104,6 +108,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
+    - UnityEngine.UI.InputField
     - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Mask
     - UnityEngine.UI.ScrollRect
@@ -112,7 +117,162 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Scenes/Supermarket_01.unity:
+    Assets/Scenes/Login.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1966}
+    - Class: 114
+      Script: {instanceID: 1968}
+    - Class: 114
+      Script: {instanceID: 1970}
+    - Class: 114
+      Script: {instanceID: 1972}
+    - Class: 114
+      Script: {instanceID: 1974}
+    - Class: 114
+      Script: {instanceID: 1982}
+    - Class: 114
+      Script: {instanceID: 2138}
+    - Class: 114
+      Script: {instanceID: 2772}
+    - Class: 114
+      Script: {instanceID: 3312}
+    - Class: 114
+      Script: {instanceID: 3546}
+    - Class: 114
+      Script: {instanceID: 3686}
+    - Class: 114
+      Script: {instanceID: 3766}
+    - Class: 114
+      Script: {instanceID: 3934}
+    - Class: 114
+      Script: {instanceID: 4578}
+    - Class: 114
+      Script: {instanceID: 5070}
+    - Class: 114
+      Script: {instanceID: 5508}
+    - Class: 114
+      Script: {instanceID: 5596}
+    - Class: 114
+      Script: {instanceID: 5788}
+    - Class: 114
+      Script: {instanceID: 5808}
+    - Class: 114
+      Script: {instanceID: 6310}
+    - Class: 114
+      Script: {instanceID: 6384}
+    - Class: 114
+      Script: {instanceID: 6488}
+    - Class: 114
+      Script: {instanceID: 6566}
+    - Class: 114
+      Script: {instanceID: 7010}
+    - Class: 114
+      Script: {instanceID: 7022}
+    - Class: 114
+      Script: {instanceID: 7654}
+    - Class: 114
+      Script: {instanceID: 8028}
+    - Class: 114
+      Script: {instanceID: 9022}
+    - Class: 114
+      Script: {instanceID: 9092}
+    - Class: 114
+      Script: {instanceID: 9164}
+    - Class: 114
+      Script: {instanceID: 9318}
+    - Class: 114
+      Script: {instanceID: 9526}
+    - Class: 114
+      Script: {instanceID: 10124}
+    - Class: 114
+      Script: {instanceID: 10226}
+    - Class: 114
+      Script: {instanceID: 10562}
+    - Class: 114
+      Script: {instanceID: 10700}
+    - Class: 114
+      Script: {instanceID: 10704}
+    - Class: 114
+      Script: {instanceID: 10872}
+    - Class: 114
+      Script: {instanceID: 10984}
+    - Class: 114
+      Script: {instanceID: 11024}
+    - Class: 114
+      Script: {instanceID: 11270}
+    - Class: 114
+      Script: {instanceID: 11348}
+    - Class: 114
+      Script: {instanceID: 12034}
+    - Class: 114
+      Script: {instanceID: 12094}
+    - Class: 114
+      Script: {instanceID: 12316}
+    - Class: 114
+      Script: {instanceID: 12598}
+    - Class: 114
+      Script: {instanceID: 12706}
+    - Class: 114
+      Script: {instanceID: 12942}
+    - Class: 114
+      Script: {instanceID: 13096}
+    - Class: 114
+      Script: {instanceID: 13208}
+    - Class: 114
+      Script: {instanceID: 13298}
+    - Class: 114
+      Script: {instanceID: 13442}
+    - Class: 114
+      Script: {instanceID: 13916}
+    - Class: 114
+      Script: {instanceID: 14236}
+    - Class: 114
+      Script: {instanceID: 14256}
+    - Class: 114
+      Script: {instanceID: 14614}
+    - Class: 114
+      Script: {instanceID: 14782}
+    - Class: 114
+      Script: {instanceID: 14848}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 124
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Supermarket.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -130,8 +290,6 @@ ScriptsOnlyBuild:
     - Class: 43
       Script: {instanceID: 0}
     - Class: 48
-      Script: {instanceID: 0}
-    - Class: 49
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
@@ -162,61 +320,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 792}
     - Class: 114
-      Script: {instanceID: 1966}
-    - Class: 114
-      Script: {instanceID: 1968}
-    - Class: 114
-      Script: {instanceID: 1970}
-    - Class: 114
-      Script: {instanceID: 1972}
-    - Class: 114
-      Script: {instanceID: 1974}
-    - Class: 114
-      Script: {instanceID: 1982}
-    - Class: 114
-      Script: {instanceID: 2138}
-    - Class: 114
       Script: {instanceID: 2434}
     - Class: 114
-      Script: {instanceID: 2772}
+      Script: {instanceID: 4218}
     - Class: 114
-      Script: {instanceID: 3548}
-    - Class: 114
-      Script: {instanceID: 3688}
-    - Class: 114
-      Script: {instanceID: 3768}
-    - Class: 114
-      Script: {instanceID: 3936}
-    - Class: 114
-      Script: {instanceID: 4220}
-    - Class: 114
-      Script: {instanceID: 4260}
-    - Class: 114
-      Script: {instanceID: 4580}
-    - Class: 114
-      Script: {instanceID: 5072}
-    - Class: 114
-      Script: {instanceID: 5510}
-    - Class: 114
-      Script: {instanceID: 5598}
-    - Class: 114
-      Script: {instanceID: 5788}
-    - Class: 114
-      Script: {instanceID: 5808}
-    - Class: 114
-      Script: {instanceID: 6310}
-    - Class: 114
-      Script: {instanceID: 6384}
-    - Class: 114
-      Script: {instanceID: 6488}
-    - Class: 114
-      Script: {instanceID: 6566}
+      Script: {instanceID: 4258}
     - Class: 114
       Script: {instanceID: 6570}
     - Class: 114
       Script: {instanceID: 6946}
-    - Class: 114
-      Script: {instanceID: 7010}
     - Class: 114
       Script: {instanceID: 7022}
     - Class: 114
@@ -224,86 +336,30 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7982}
     - Class: 114
-      Script: {instanceID: 8028}
-    - Class: 114
       Script: {instanceID: 8814}
-    - Class: 114
-      Script: {instanceID: 9022}
-    - Class: 114
-      Script: {instanceID: 9092}
-    - Class: 114
-      Script: {instanceID: 9164}
-    - Class: 114
-      Script: {instanceID: 9318}
     - Class: 114
       Script: {instanceID: 10124}
     - Class: 114
-      Script: {instanceID: 10226}
-    - Class: 114
       Script: {instanceID: 10414}
     - Class: 114
-      Script: {instanceID: 10560}
+      Script: {instanceID: 10704}
     - Class: 114
-      Script: {instanceID: 10698}
+      Script: {instanceID: 10862}
     - Class: 114
-      Script: {instanceID: 10702}
+      Script: {instanceID: 11130}
     - Class: 114
-      Script: {instanceID: 10860}
+      Script: {instanceID: 12134}
     - Class: 114
-      Script: {instanceID: 10870}
+      Script: {instanceID: 12494}
     - Class: 114
-      Script: {instanceID: 10982}
+      Script: {instanceID: 12600}
     - Class: 114
-      Script: {instanceID: 11022}
+      Script: {instanceID: 14408}
     - Class: 114
-      Script: {instanceID: 11128}
-    - Class: 114
-      Script: {instanceID: 11268}
-    - Class: 114
-      Script: {instanceID: 11346}
-    - Class: 114
-      Script: {instanceID: 12032}
-    - Class: 114
-      Script: {instanceID: 12092}
-    - Class: 114
-      Script: {instanceID: 12132}
-    - Class: 114
-      Script: {instanceID: 12314}
-    - Class: 114
-      Script: {instanceID: 12492}
-    - Class: 114
-      Script: {instanceID: 12596}
-    - Class: 114
-      Script: {instanceID: 12598}
-    - Class: 114
-      Script: {instanceID: 12704}
-    - Class: 114
-      Script: {instanceID: 12940}
-    - Class: 114
-      Script: {instanceID: 13034}
-    - Class: 114
-      Script: {instanceID: 13094}
-    - Class: 114
-      Script: {instanceID: 13206}
-    - Class: 114
-      Script: {instanceID: 13296}
-    - Class: 114
-      Script: {instanceID: 13440}
-    - Class: 114
-      Script: {instanceID: 13914}
-    - Class: 114
-      Script: {instanceID: 14254}
-    - Class: 114
-      Script: {instanceID: 14406}
-    - Class: 114
-      Script: {instanceID: 14778}
-    - Class: 114
-      Script: {instanceID: 14844}
+      Script: {instanceID: 39426}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
-      Script: {instanceID: 0}
-    - Class: 128
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
@@ -314,14 +370,6 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
       Script: {instanceID: 0}
     - Class: 258
       Script: {instanceID: 0}
@@ -610,12 +658,6 @@ ScriptsOnlyBuild:
     assemblyName: Oculus.VR.dll
     namespaceName: 
     className: OVRSkeletonRenderer
-  - hash:
-      serializedVersion: 2
-      Hash: 49dcb3939f87870ac10cf1f8fcdfb35e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: FollowToTheSide
   - hash:
       serializedVersion: 2
       Hash: 6964efb31a246b4ce1766277c3a780bc
@@ -1618,6 +1660,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: OculusSampleFramework
     className: WindmillController
+  - hash:
+      serializedVersion: 2
+      Hash: 2a3ee2b042aca4b4e717251910bb3696
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: XROffsetGrabInteractable
   - hash:
       serializedVersion: 2
       Hash: 1f8a51ddcf7629cdce89ec83e6b9ff65
@@ -4723,6 +4771,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UserAccess
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseUpMessageListener
@@ -4830,11 +4884,12 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 2a3ee2b042aca4b4e717251910bb3696
+      Hash: 49dcb3939f87870ac10cf1f8fcdfb35e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: XROffsetGrabInteractable
+    className: followToCamera
   platform: 13
   scenePathNames:
-  - Assets/Scenes/Supermarket_01.unity
-  playerPath: /Users/sarahju/VR_Shopping_7/vr7.apk
+  - Assets/Scenes/Login.unity
+  - Assets/Scenes/Supermarket.unity
+  playerPath: /Users/sarahju/VR_Shopping_8_1/vr8_2.apk
