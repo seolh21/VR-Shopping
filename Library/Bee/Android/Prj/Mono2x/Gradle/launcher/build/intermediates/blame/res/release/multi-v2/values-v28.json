@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/sarahju/VR_Shopping_8_1/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v28/values-v28.xml",
+            "outputFile": "/Users/sarahju/VR_Shopping_8_3/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v28/values-v28.xml",
             "map": [
                 {
-                    "source": "/Users/sarahju/VR_Shopping_8_1/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/values-v28/styles.xml",
+                    "source": "/Users/sarahju/VR_Shopping_8_3/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/values-v28/styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "0",

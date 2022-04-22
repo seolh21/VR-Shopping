@@ -1,17 +1,31 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/sarahju/VR_Shopping_8_1/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/sarahju/VR_Shopping_8_3/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "/Users/sarahju/VR_Shopping_8_1/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/values/styles.xml",
+                    "source": "/Users/sarahju/VR_Shopping_8_3/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/values/strings.xml",
                     "from": {
-                        "startLines": "5,2,7",
-                        "startColumns": "0,0,0",
-                        "startOffsets": "190,53,288",
-                        "endLines": "6,4,10",
-                        "endColumns": "8,8,8",
-                        "endOffsets": "286,188,513"
+                        "startLines": "2,-1",
+                        "startColumns": "2,-1",
+                        "startOffsets": "53,-1",
+                        "endColumns": "49,-1",
+                        "endOffsets": "100,-1"
+                    },
+                    "to": {
+                        "startLines": "3,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "101,153",
+                        "endColumns": "51,67",
+                        "endOffsets": "148,216"
+                    }
+                },
+                {
+                    "source": "/Users/sarahju/VR_Shopping_8_3/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1",
+                        "startColumns": "-1,-1,-1",
+                        "startOffsets": "-1,-1,-1"
                     },
                     "to": {
                         "startLines": "5,7,10",
@@ -23,13 +37,11 @@
                     }
                 },
                 {
-                    "source": "/Users/sarahju/VR_Shopping_8_1/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/values/ids.xml",
+                    "source": "/Users/sarahju/VR_Shopping_8_3/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/values/ids.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "46",
-                        "endOffsets": "97"
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
                     },
                     "to": {
                         "startLines": "2",
@@ -37,23 +49,6 @@
                         "startOffsets": "55",
                         "endColumns": "45",
                         "endOffsets": "96"
-                    }
-                },
-                {
-                    "source": "/Users/sarahju/VR_Shopping_8_1/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "2,2",
-                        "startOffsets": "53,103",
-                        "endColumns": "49,65",
-                        "endOffsets": "100,166"
-                    },
-                    "to": {
-                        "startLines": "3,4",
-                        "startColumns": "4,4",
-                        "startOffsets": "101,153",
-                        "endColumns": "51,67",
-                        "endOffsets": "148,216"
                     }
                 }
             ]

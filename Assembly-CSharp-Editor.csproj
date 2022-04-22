@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{983209eb-87bf-cebd-d3b2-5dfa24aaae4a}</ProjectGuid>
+    <ProjectGuid>{c00ebbf8-080d-0f45-e07b-7da9f635b30f}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -36,13 +36,15 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets/Oculus/SampleFramework/Usage/OVROverlayCanvas/Editor/OVROverlayCanvasEditor.cs" />
      <Compile Include="Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs" />
-     <None Include="Assets/Firebase/Editor/FirebaseDatabase_version-8.9.0_manifest.txt" />
-     <None Include="Assets/ExternalDependencyManager/Editor/external-dependency-manager_version-1.2.170_manifest.txt" />
-     <None Include="Assets/Firebase/Editor/AuthDependencies.xml" />
-     <None Include="Assets/Firebase/Editor/AppDependencies.xml" />
-     <None Include="Assets/Firebase/Editor/FirebaseAuth_version-8.9.0_manifest.txt" />
-     <None Include="Assets/Firebase/Editor/DatabaseDependencies.xml" />
+     <Compile Include="Assets/Oculus/SampleFramework/Editor/BuildAssetPackages.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Video/Editor/AndroidVideoEditorUtil.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Editor/BuildSamples.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Gradle/Editor/Utils.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Firebase/Editor/FirebaseEnabler.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/Editor/TeleportTransitionWarpInspector.cs" />
+     <Compile Include="Assets/Oculus/SampleFramework/Core/Video/Editor/MediaPlayerImageEditor.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2021.2.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -301,89 +303,47 @@
     <Reference Include="UnityEditor.iOS.Extensions">
         <HintPath>/Applications/Unity/Hub/Editor/2021.2.10f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="log4netPlastic">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
-    </Reference>
-    <Reference Include="Firebase.App">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Plastic.Newtonsoft.Json">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Firebase.Database">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Assets/Firebase/Plugins/Firebase.Database.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst.Unsafe">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/PackageCache/com.unity.burst@1.6.4/Unity.Burst.Unsafe.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.PackageManagerResolver">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Assets/ExternalDependencyManager/Editor/1.2.170/Google.PackageManagerResolver.dll</HintPath>
-    </Reference>
-    <Reference Include="Firebase.TaskExtension">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/PackageCache/com.unity.visualscripting@1.7.6/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.JarResolver">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Assets/ExternalDependencyManager/Editor/1.2.170/Google.JarResolver.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.VersionHandler">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VisualScripting.IonicZip">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.IOSResolver">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Assets/ExternalDependencyManager/Editor/1.2.170/Google.IOSResolver.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Pdb">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/PackageCache/com.unity.burst@1.6.4/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/PackageCache/com.unity.burst@1.6.4/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="log4netPlastic">
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Google.VersionHandlerImpl">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Assets/ExternalDependencyManager/Editor/1.2.170/Google.VersionHandlerImpl.dll</HintPath>
+    <Reference Include="Unity.Plastic.Newtonsoft.Json">
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Firebase.Editor">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Assets/Firebase/Editor/Firebase.Editor.dll</HintPath>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.YamlDotNet">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/PackageCache/com.unity.burst@1.6.4/Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Mdb">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/PackageCache/com.unity.burst@1.6.4/Unity.Burst.CodeGen/Unity.Burst.Cecil.Mdb.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Tasks">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/PackageCache/com.unity.burst@1.6.4/Unity.Burst.CodeGen/Unity.Burst.Cecil.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/PackageCache/com.unity.burst@1.6.4/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.MiniJson">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/PackageCache/com.unity.burst@1.6.4/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Rocks">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/PackageCache/com.unity.burst@1.6.4/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/PackageCache/com.unity.burst@1.6.4/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll</HintPath>
     </Reference>
-    <Reference Include="Firebase.Platform">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Compat">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
-    </Reference>
-    <Reference Include="Firebase.Auth">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/PackageCache/com.unity.visualscripting@1.7.6/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
         <HintPath>/Applications/Unity/Hub/Editor/2021.2.10f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -758,252 +718,252 @@
         <HintPath>/Applications/Unity/Hub/Editor/2021.2.10f1/Unity.app/Contents/UnityReferenceAssemblies/unity-4.8-api/Facades/netstandard.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Searcher.Editor">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.CoreUtils.Editor">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.XR.CoreUtils.Editor.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.XR.CoreUtils.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.Management">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.Oculus.Editor">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.XR.Oculus.Editor.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.XR.Oculus.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="PPv2URPConverters">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/PPv2URPConverters.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/PPv2URPConverters.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.Management.Editor">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Editor">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.Interaction.Toolkit">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.XR.Interaction.Toolkit.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.XR.Interaction.Toolkit.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Subsystem.Registration">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.CoreUtils">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.XR.CoreUtils.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.XR.CoreUtils.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.Interaction.Toolkit.Editor">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.XR.Interaction.Toolkit.Editor.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.XR.Interaction.Toolkit.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.Oculus">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.XR.Oculus.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.XR.Oculus.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
-        <HintPath>/Users/sarahju/VR_Shopping_8_2/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
+        <HintPath>/Users/sarahju/VR_Shopping_8_3/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{887d3c9f-89fd-a009-ccbb-6fe392da1544}</Project>
+      <Project>{d4651ee9-4d07-7c25-c44f-f07b7ece13ee}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
     <ProjectReference Include="AssistantCoreSDKEditor.csproj">
-      <Project>{b30f2748-891d-b71f-d348-c29e46d89dd1}</Project>
+      <Project>{a251135b-1044-bc19-78f3-44694815363a}</Project>
       <Name>AssistantCoreSDKEditor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.AudioManager.csproj">
-      <Project>{dab5fec9-e342-e2fe-492b-05f0e9b77fca}</Project>
+      <Project>{f4abd63a-4bcc-4849-0fa5-69c7db8abd26}</Project>
       <Name>Oculus.AudioManager</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Interaction.csproj">
-      <Project>{2428ddb9-d4f6-b91c-850b-1b48492eca13}</Project>
+      <Project>{2733eee8-fddc-5e66-77d1-7d622177181b}</Project>
       <Name>Oculus.Interaction</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Platform.Editor.csproj">
-      <Project>{d9bca124-ca42-b4b3-6e05-fc525e76f92a}</Project>
+      <Project>{b81d6410-cc6f-213c-5580-4a2f938dfb05}</Project>
       <Name>Oculus.Platform.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="AssistantCoreSDKRuntime.csproj">
-      <Project>{0745bcdf-04c2-7ba7-03cc-dcf087228293}</Project>
+      <Project>{717dd9f5-0c35-91a9-ddd3-e5003e279d5e}</Project>
       <Name>AssistantCoreSDKRuntime</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.AudioManager.Utils.Editor.csproj">
-      <Project>{e70732e2-8f45-32d1-aac2-d35245ad2a48}</Project>
+      <Project>{961b1130-2ffa-e378-0d88-6ef6fdb90375}</Project>
       <Name>Oculus.AudioManager.Utils.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Facebook.WitAI.csproj">
-      <Project>{81d6a06e-a33f-10bc-0b8a-53de61e0f76c}</Project>
+      <Project>{713b8d4e-d8a7-8454-fdf0-53aa98435aea}</Project>
       <Name>Facebook.WitAI</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.csproj">
-      <Project>{9aa005e3-a54f-2001-19e1-a45ffe051b0f}</Project>
+      <Project>{3e072a40-e385-30ab-09bd-1a6ed0f27bb4}</Project>
       <Name>Oculus.VR</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.AudioManager.Audio.Editor.csproj">
-      <Project>{f09336d2-4eaf-3777-aa8d-eacf78787491}</Project>
+      <Project>{e910dd54-b84d-6642-db04-25c0a9db9e8a}</Project>
       <Name>Oculus.AudioManager.Audio.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Spatializer.Editor.csproj">
-      <Project>{e05b2604-2ca5-7190-5131-dceecee46375}</Project>
+      <Project>{11246681-ec7b-8bdf-4f28-3d53a825aa6a}</Project>
       <Name>Oculus.Spatializer.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Interaction.Samples.csproj">
-      <Project>{e03767e1-d4c7-0b6d-7db3-285601e2d60c}</Project>
+      <Project>{05037ac1-5b70-3c30-5d2c-d207ae427331}</Project>
       <Name>Oculus.Interaction.Samples</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.Editor.csproj">
-      <Project>{9991cb71-bb88-1cb5-31e2-5cfc1818191f}</Project>
+      <Project>{31c6afd7-c935-0ba8-b8cc-ebf04bedf098}</Project>
       <Name>Oculus.VR.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Platform.csproj">
-      <Project>{520d6813-32b4-af4e-47db-fafd57f2539c}</Project>
+      <Project>{96640a62-9458-805c-03a9-7b4868640e66}</Project>
       <Name>Oculus.Platform</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Interaction.Editor.csproj">
-      <Project>{1875dfeb-e41e-d937-1bc0-3d10397bdc1b}</Project>
+      <Project>{0d5a8053-3132-a504-52a8-af31225a3d93}</Project>
       <Name>Oculus.Interaction.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.Scripts.Editor.csproj">
-      <Project>{0088ecf8-bfdd-75a1-89c4-5e4e840f3081}</Project>
+      <Project>{8e31a14f-88ec-5884-e265-7a91840b7012}</Project>
       <Name>Oculus.VR.Scripts.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Spatializer.csproj">
-      <Project>{808fcbfd-2ccc-ee00-b6ce-41340f62ff15}</Project>
+      <Project>{fbac6e52-c55b-a7cd-5c3d-7beca8003987}</Project>
       <Name>Oculus.Spatializer</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Management.Samples.Editor.csproj">
-      <Project>{9ffe1b4c-a9ef-f4d7-e715-882f156b6906}</Project>
+      <Project>{a495769a-8759-718f-4362-dfec56fa8555}</Project>
       <Name>Unity.XR.Management.Samples.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="VoiceSDK.Editor.csproj">
-      <Project>{0d976ed5-1fbc-adad-9d3d-2709694b4ad6}</Project>
+      <Project>{5a4a3d41-8aa0-05e1-ddeb-9a7fda45c538}</Project>
       <Name>VoiceSDK.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Interaction.InterfaceSupport.csproj">
-      <Project>{ac73f102-4384-5933-4731-2f4c312484af}</Project>
+      <Project>{42a2051e-3970-cb75-4a3c-de0771796493}</Project>
       <Name>Oculus.Interaction.InterfaceSupport</Name>
     </ProjectReference>
     <ProjectReference Include="Facebook.Wit.Editor.csproj">
-      <Project>{cfa9c171-ca6d-571e-616d-ddeaa0aeaf3b}</Project>
+      <Project>{e74fde4f-901b-c4da-00a2-981036a90d7f}</Project>
       <Name>Facebook.Wit.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.LipSync.Editor.csproj">
-      <Project>{3982313d-9f37-a31f-d843-c4c861879742}</Project>
+      <Project>{15da0971-6945-dab2-0533-a8f493bd3575}</Project>
       <Name>Oculus.LipSync.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Management.Samples.csproj">
-      <Project>{873d14e0-6c3a-8c0e-aca1-a90c8bb9a34c}</Project>
+      <Project>{4e7d362f-4ee2-1371-be12-890cd9b73a0a}</Project>
       <Name>Unity.XR.Management.Samples</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.LipSync.csproj">
-      <Project>{c390923a-282c-b94e-e2fe-f07e4f72f1b3}</Project>
+      <Project>{7c1000bd-e2e2-147b-72f2-95ba30aaae70}</Project>
       <Name>Oculus.LipSync</Name>
     </ProjectReference>
     <ProjectReference Include="VoiceSDK.Runtime.csproj">
-      <Project>{88f0a4fa-176c-dc4e-8077-623374130a39}</Project>
+      <Project>{c2bbc43f-7bc5-efbf-4720-fd3016ab890d}</Project>
       <Name>VoiceSDK.Runtime</Name>
     </ProjectReference>
   </ItemGroup>

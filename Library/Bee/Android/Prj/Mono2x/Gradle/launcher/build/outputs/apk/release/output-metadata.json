@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.Sarah.VR_Shopping8_1",
+  "applicationId": "com.Sarah.VR_Shopping8_3",
   "variantName": "release",
   "elements": [
     {
@@ -12,7 +12,7 @@
       "filters": [],
       "properties": [],
       "versionCode": 1,
-      "versionName": "0.2.0",
+      "versionName": "0.3.0",
       "enabled": true,
       "outputFile": "launcher-release.apk"
     }
