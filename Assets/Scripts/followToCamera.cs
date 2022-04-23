@@ -24,31 +24,31 @@ public class followToCamera : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(controller.selectAction.action.ReadValue<float>() > 0.5)
-        {
-            RaycastHit hit;
-            // Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Ray ray = new Ray(controller.transform.position, controller.transform.forward);
-            if(Physics.Raycast(ray, out hit, 100.0f))
-            {
-                if(hit.collider.gameObject.name == this.name)
-                {
+        // if(controller.selectAction.action.ReadValue<float>() > 0.5)
+        // {
+        //     RaycastHit hit;
+        //     // Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        //     Ray ray = new Ray(controller.transform.position, controller.transform.forward);
+        //     if(Physics.Raycast(ray, out hit, 100.0f))
+        //     {
+        //         if(hit.collider.gameObject.name == this.name)
+        //         {
                    
-                    flag = 1-flag;
+        //             flag = 1-flag;
                     
-                }
-            }
-        }
-        Debug.Log(flag);
+        //         }
+        //     }
+        // }
+        // Debug.Log(flag);
 
-        if(flag == 0)
-        {
+        // if(flag == 0)
+        // {
         transform.position = Vector3.Lerp ( transform.position, target.position + Vector3.up * offset.y 
             + Vector3.ProjectOnPlane(target.right, Vector3.up).normalized * offset.x
             + Vector3.ProjectOnPlane(target.forward, Vector3.up).normalized * offset.z, Time.deltaTime * moveSpeed);
         
         transform.eulerAngles = new Vector3(0, target.eulerAngles.y, 0);
         transform.rotation = target.transform.rotation * Quaternion.Euler(0, 180, 0);
-        }
+        // }
     }
 }
