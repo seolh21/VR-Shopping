@@ -13,17 +13,16 @@ public class followToCamera : MonoBehaviour
     ActionBasedController controller;
 
 
-    void start()
-    {
-        controller = GetComponent<ActionBasedController>();
+    // void start()
+    // {
+        // controller = GetComponent<ActionBasedController>();
 
-        transform.position = target.position + Vector3.up * offset.y 
-            + Vector3.ProjectOnPlane(target.right, Vector3.up).normalized * offset.x
-            + Vector3.ProjectOnPlane(target.forward, Vector3.up).normalized * offset.z;
-    }
+        // transform.position = target.position + Vector3.up * offset.y 
+        //     + Vector3.ProjectOnPlane(target.right, Vector3.up).normalized * offset.x
+        //     + Vector3.ProjectOnPlane(target.forward, Vector3.up).normalized * offset.z;
+    // }
     // Update is called once per frame
-    void FixedUpdate()
-    {
+    void FixedUpdate() {
         // if(controller.selectAction.action.ReadValue<float>() > 0.5)
         // {
         //     RaycastHit hit;
@@ -41,14 +40,11 @@ public class followToCamera : MonoBehaviour
         // }
         // Debug.Log(flag);
 
-        // if(flag == 0)
-        // {
         transform.position = Vector3.Lerp ( transform.position, target.position + Vector3.up * offset.y 
             + Vector3.ProjectOnPlane(target.right, Vector3.up).normalized * offset.x
             + Vector3.ProjectOnPlane(target.forward, Vector3.up).normalized * offset.z, Time.deltaTime * moveSpeed);
         
         transform.eulerAngles = new Vector3(0, target.eulerAngles.y, 0);
         transform.rotation = target.transform.rotation * Quaternion.Euler(0, 180, 0);
-        // }
     }
 }
